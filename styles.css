@@ -4,6 +4,34 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+}
+
+h2 {
+    padding: 15px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px gray;
+}
+
+.user-info * {
+    padding: 15px;
+}
+
 .none {
     display: none;
 }
