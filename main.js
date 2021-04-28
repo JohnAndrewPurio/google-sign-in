@@ -1,7 +1,7 @@
 const button = document.querySelector('.g-signin2');
 const content = document.querySelector('.user-info');
 const fullName = document.querySelector('.full-name');
-const profile = document.getElementById('profile');
+const picture = document.getElementById('profile');
 const email = document.querySelector('.email');
 
 function onSignIn(googleUser) {
@@ -21,7 +21,7 @@ function onSignIn(googleUser) {
     console.log(profile);
 
     fullName.innerText = profile.getName();
-    profile.src = profile.getImageUrl();
+    picture.src = profile.getImageUrl();
     email.innerText = profile.getEmail();
 
     button.classList.add('none');
