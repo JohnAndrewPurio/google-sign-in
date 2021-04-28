@@ -18,7 +18,7 @@ function onSignIn(googleUser) {
     var id_token = googleUser.getAuthResponse().id_token;
     console.log("ID Token: " + id_token);
 
-    console.log(profile);
+    console.log(profile, picture);
 
     fullName.innerText = profile.getName();
     picture.src = profile.getImageUrl();
